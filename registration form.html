@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="style for registration form.css">
+    <link rel="stylesheet" href="homepage.html">
+</head>
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                <button type="button" class="toggle-btn" onclick="signup()">Signup</button>
+            </div>
+            <div class="social-icons">
+                <img src="images/call.png" style="color: blue;">
+                <img src="images/email.png" style="color: red;">
+                <img src="images/facebook.png" style="color: rgb(3, 3, 138);">
+                <img src="images/twitter.png" style="color: rgb(56, 56, 245);">
+                <img src="images/whatsapp.png" style="color: green;">
+            </div>
+            <form id="Login" class="input-group">
+                <input type="text" class="input-field" placeholder="user_name" required>
+                <input type="email" class="input-field" placeholder="Enter your email" required>
+                <input type="text" class="input-field" placeholder="Enter password" required>
+                <input type="checkbox" class="check-box"><span>Remember password</span>
+                <button type="submit" class="submit-btn">Login</button>
+            </form>
+            <form id="Signup" class="input-group">
+                <input type="text" class="input-field" placeholder="Enter your first name" required>
+                <input type="text" class="input-field" placeholder="Enter your surname" required>
+                <input type="email" class="input-field" placeholder="Enter your email" required><br><br>
+                <label for="date">Date of birth</label>
+                <input type="date" name="date" id="date of birth"><br><br>
+                <input type="text" class="input-field" placeholder="Enter password" required>
+                <input type="checkbox" class="check-box"><span>I agree to terms & conditions</span>
+                <button type="submit" class="submit-btn">Signup</button>
+            </form>
+        </div>
+    </div>
+    <script>
+    var x = document.getElementById("Login");
+    var y = document.getElementById("Signup");
+    var z = document.getElementById("btn");
+    
+    function signup(){
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+    }
+    function login(){
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0px";
+    }
+
+    </script>
+</body>
+</html>
